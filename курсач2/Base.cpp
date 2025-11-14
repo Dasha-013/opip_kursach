@@ -4,6 +4,7 @@
 #include "PayrollPeriod.h"
 #include "SalaryDocumentation.h"
 #include "PayrollSession.h"
+#include "User.h"
 
 EmployeeBase::EmployeeBase() {
     readEmployees();
@@ -419,9 +420,10 @@ void AdminEmployeeBase::sessionMenu(std::shared_ptr<PayrollSession> session) {
         case 4: {
             SalaryDateTime date;
             std::string label;
-            get("Введите новую дату (dd.mm.yyyy): ", date);
+            std::cout << "Введите новую дату (dd.mm.yyyy): ";
+            std::cin >> date;
+            std::cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
             get("Введите новый заголовок периода: ", label);
-
             session->setDate(date);
             session->setPeriodLabel(label);
             break;

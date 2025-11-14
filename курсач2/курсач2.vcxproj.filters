@@ -42,6 +42,9 @@
     <ClCompile Include="PayrollSession.cpp">
       <Filter>Исходные файлы</Filter>
     </ClCompile>
+    <ClCompile Include="User.cpp">
+      <Filter>Исходные файлы</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Base.h">
@@ -66,6 +69,9 @@
       <Filter>Исходные файлы</Filter>
     </ClInclude>
     <ClInclude Include="SalaryDocumentation.h">
+      <Filter>Исходные файлы</Filter>
+    </ClInclude>
+    <ClInclude Include="User.h">
       <Filter>Исходные файлы</Filter>
     </ClInclude>
   </ItemGroup>

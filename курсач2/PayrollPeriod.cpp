@@ -1,3 +1,4 @@
+#include <iomanip>  
 #include "PayrollPeriod.h"
 #include "Functions.h"
 
@@ -34,7 +35,11 @@ bool PayrollPeriod::operator<(PayrollPeriod& other) {//для сортирвок
 void PayrollPeriod::getInfo() {
     get("Введите название периода: ", label);
     get("Введите описание периода: ", description);
-    duration.getDur("Введите дату начала периода (dd.mm.yyyy): ");
+
+    std::cout << "Введите дату начала периода (dd.mm.yyyy): ";
+    std::cin >> duration;
+
+    std::cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
 }
 
 void PayrollPeriod::addSession(std::shared_ptr<PayrollSession> session) {

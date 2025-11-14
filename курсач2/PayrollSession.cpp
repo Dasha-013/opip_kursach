@@ -6,6 +6,7 @@
 #include "SalaryDocumentation.h"
 #include "SalaryDateTime.h"
 #include "Functions.h"
+#include "User.h"
 
 int PayrollSession::sessionCounter = 0;
 

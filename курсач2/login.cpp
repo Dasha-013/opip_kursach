@@ -1,5 +1,6 @@
 #include "Login.h"
 #include "Functions.h"
+#include "User.h"
 #include "Base.h"
 #include <Windows.h>
 #include <conio.h>
